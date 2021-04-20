@@ -177,7 +177,13 @@ var gameover = false;
 			var scaleY = window.innerHeight / 846;
 			this.game.scale.scaleMode = Phaser.ScaleManager.USER_SCALE;
 			this.game.scale.setUserScale(scaleX, scaleY);
-		} 
+		} else {
+			game.scale.pageAlignHorizontally=true;
+			game.scale.pageAlignVertically=true;
+			var scaleY = window.innerHeight / 846;
+			this.game.scale.scaleMode = Phaser.ScaleManager.USER_SCALE;
+			this.game.scale.setUserScale(1, scaleY);
+		}
 	  }
       this.preload = function(){
               ////////////////////////////////////////////////////////////////////////////menuState
