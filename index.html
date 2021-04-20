@@ -15,7 +15,7 @@
         }
 
         img {
-            width: 100%
+            height: 100%
         }
 
         html {
@@ -23,6 +23,19 @@
             height: 100%
         }
 </style>
+<audio id='audio_play' src='drop.mp3'></audio> 
+<script type="text/javascript"> 
+function play() { 
+    var audio = document.getElementById('audio_play'); 
+    if (audio.paused) { 
+        audio.play(); 
+    }else{ 
+        audio.pause(); 
+        audio.currentTime = 0 
+    } 
+} 
+</script>
+<div onclick="play()">
 </head>
 <body>
 <div id="container"></div>
