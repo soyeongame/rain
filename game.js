@@ -1,7 +1,7 @@
 
 var game = new Phaser.Game(
-	448,
-	846,
+	300,
+	567,
 	Phaser.CANVAS,
 	'container'
 );
