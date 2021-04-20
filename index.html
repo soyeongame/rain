@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="phaser.min.js" type="text/javascript" charset="utf-8"></script>
+	<title>전소연 빗방울 게임</title>
+<link rel="shortcut icon" href="rain.ico"/>
+	<style type="text/css">
+		body{  
+			margin: 0px;
+			padding: 0px;
+			overflow: hidden;
+		}
+	</style>
+<audio id='audio_play' src='drop.mp3'></audio> 
+<script type="text/javascript"> 
+function play() { 
+    var audio = document.getElementById('audio_play'); 
+    if (audio.paused) { 
+        audio.play(); 
+    }else{ 
+        audio.pause(); 
+        audio.currentTime = 0 
+    } 
+} 
+</script>
+<div onclick="play()">
+</body>
+</head>
+<body>
+<div id="container"></div>
+</body>
+<script src="game.js" type="text/javascript" charset="utf-8"></script>
+</html>
